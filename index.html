@@ -10,6 +10,28 @@ body{margin:10px auto;max-width:900px;line-height:1.6;color:black;background-col
 .links{font-size: 1.2em;text-decoration: none;color:blue;}small{color:gray;font-family: 'Courier New', monospace;}
 img{height: 1.2em;vertical-align: text-bottom;}
 intro{font-size:0.95em;font-family: "Times New Roman", Times, serif;}
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
 </style>
 </head>
 <body>
@@ -22,6 +44,11 @@ intro{font-size:0.95em;font-family: "Times New Roman", Times, serif;}
 <hr align="left" width="100%">
  
 <p>Nossos serviços: XXXXXX</p>
+
+<button type="button" class="collapsible">Continuidade de Negócios</button>
+<div class="content">
+  <p>Business Impact Analysis.<br> Plano de Continuidade de Negócios</p>
+</div>
 
 <a aria-label="Falar no WhatsApp" href="https://wa.me/5521976689161"><img alt="Falar no WhatsApp" src="WhatsAppButtonGreenLarge.png" />
 <a />
