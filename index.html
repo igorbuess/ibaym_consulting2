@@ -32,6 +32,13 @@ intro{font-size:0.95em;font-family: "Times New Roman", Times, serif;}
   overflow: hidden;
   background-color: #f1f1f1;
 }
+
+ .container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaçamento entre as imagens */
+  }
 </style>
 </head>
 <body>
@@ -65,6 +72,18 @@ intro{font-size:0.95em;font-family: "Times New Roman", Times, serif;}
 <a aria-label="Falar no WhatsApp" href="https://wa.me/5521976689161">
   <img alt="Falar no WhatsApp" src="WhatsAppButtonGreenLarge.png" style="width: 200px; height: auto; display: block; margin: auto;">
 </a>
+
+<div class="container">
+  <a href="https://wa.me/5521976689161" aria-label="Falar no WhatsApp">
+    <img src="WhatsAppButtonGreenLarge.png" alt="WhatsApp" width="200px">
+  </a>
+  <a href="https://facebook.com" aria-label="Facebook">
+    <img src="WhatsAppButtonGreenLarge.png" alt="Telegram" width="200px">
+  </a>
+  <a href="https://facebook.com" aria-label="Facebook">
+    <img src="WhatsAppButtonGreenLarge.png" alt="Facebool" width="200px">
+  </a>
+</div>
  
 <hr align="left" width="100%">
 
