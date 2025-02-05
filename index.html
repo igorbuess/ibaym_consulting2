@@ -82,6 +82,7 @@ intro{font-size:0.95em;font-family: "Times New Roman", Times, serif;}
   </a>
 </div>
 
+<!-- 
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -97,6 +98,18 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
- 
+-->
+<script>
+document.querySelectorAll(".collapsible").forEach(button => {
+  button.addEventListener("click", function() {
+    this.classList.toggle("active");
+    let content = this.nextElementSibling;
+    if (content && content.style) {
+      content.style.display = (content.style.display === "block") ? "none" : "block";
+    }
+  });
+});
+</script>
+  
 </body>
 </html>
